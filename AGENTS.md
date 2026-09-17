@@ -120,7 +120,7 @@ No adaptive controller ships without a conservative deterministic fallback.
 ## Code Editing Discipline
 
 ### No Script-Based Changes
-**NEVER** run a script that mass-edits code files. Brittle regex transforms create more problems than they solve. Make code changes manually (use parallel subagents for many simple changes; do subtle/complex changes methodically yourself).
+**NEVER** run a script that mass-edits code files. Brittle regex transforms create more problems than they solve. Make code changes manually and in sequence; one agent owns every change.
 
 ### No File Proliferation
 Revise existing files in place. **NEVER** create `mainV2.rs` / `nn_improved.rs` / `decoder_enhanced.rs`. New files are reserved for genuinely new functionality; the bar is incredibly high.
